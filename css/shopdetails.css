@@ -1,0 +1,394 @@
+body {
+	background-color: white;
+}
+
+
+#shopDetailContainer {
+	margin-top: 8%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 8%;
+}
+
+/*OWL CAROUSEL STUFF*/
+
+#DetailHeader {
+	color: #02baa0;
+	text-align: center;
+	margin-bottom: 4%;
+	padding-top: 5%;
+}
+
+#divRating {
+	font-size: 12px;
+	margin-top: 5%;
+}
+
+.owl-carousel .item img {
+	width: 100%;
+	height: 60vh;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+	background: #02baa0 !important;
+	transition: .5s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 13px !important;
+	height: 13px !important;
+	transition: .5s;
+}
+
+
+.owl-dots .owl-dot {
+	outline: none;
+}
+
+.button-secondary-url img {
+	margin-top: 25%;
+	margin-bottom: 20%;
+	width: 30% !important;
+	height: 9vh !important;
+	border: 1px dashed #02baa0;
+}
+
+.button-secondary-url {
+	text-align: center;
+}
+
+.buttonSecondaryUrlDiv {
+	display: flex;
+}
+
+.buttonSecondaryUrlDiv p {
+	text-align: center;
+	margin-left: -25% !important;
+}
+
+.buttonSecondaryUrlDiv p:nth-child(1) {
+	margin-left: 0% !important;
+	padding: 0;
+}
+
+
+/*FULL ITEM DESCRIPTION*/
+
+.itemDescription {
+	margin-top: 10%;
+}
+
+.PriceSection,
+.FlavorSection,
+.QuantitySection,
+.CartSection {
+	margin-left: 5%;
+}
+
+.PriceSection h2,
+.FlavorSection h2 {
+	font-family: cursive;
+	margin-top: 2%;
+	opacity: .8 !important;
+	font-weight: 300;
+}
+
+.PriceSection p {
+	color: #02baa0;
+	font-size: 40px;
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	font-weight: 600;
+}
+
+.FlavorSection h2 {
+	margin-bottom: 4%;
+}
+
+.FlavorSection form {
+	margin-left: 2%;
+}
+
+/*FLAVOR SECTION*/
+
+.custom-control:nth-child(2),
+.custom-control:nth-child(3) {
+	margin-left: 10px;
+}
+
+.custom-control-label::after {
+	position: absolute;
+	top: 0rem;
+	left: -1.75rem;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: "";
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+#custom-control-label1:after {
+	border-radius: 50%;
+	background-color: chocolate;
+}
+
+#custom-control-label2:after {
+	border-radius: 50%;
+	background-color: black;
+}
+
+#custom-control-label3:after {
+	background-color: yellowgreen;
+	border-radius: 50%;
+}
+
+/*QUANTITY SECTION*/
+.form-group label {
+	font-size: 26px;
+	font-family: cursive;
+	opacity: .8;
+}
+
+/*CART BUTTON SECTION*/
+
+.CartSection {
+	text-align: center;
+	margin-top: 10%;
+	margin-left: -10px;
+}
+
+.CartSection button {
+	display: inline-block;
+	position: relative;
+	padding: 10px 20px;
+	cursor: pointer;
+	z-index: 3;
+	border: 1px solid #02baa0;
+	border-radius: 5px;
+	background: transparent;
+	font-weight: 550;
+	text-align: center;
+	margin-top: 1%;
+	transition: .5s;
+}
+
+.CartSection button a {
+	color: #02baa0;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.CartSection button:hover:before {
+	transform: scaleX(1);
+}
+
+.CartSection button:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: -1px;
+	bottom: 0;
+	background: linear-gradient(45deg, #02aab0, #00cdac);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s ease-out;
+	opacity: 1;
+	border-radius: 5px;
+}
+
+.CartSection button:hover a {
+	z-index: 5;
+	color: #fff;
+}
+
+.CartSection button:focus {
+	outline: none;
+}
+
+/*RELATED PRODUCTS SECTION*/
+
+#RelatedFoods {
+	text-align: center;
+	font-family: cursive;
+	color: #02baa0;
+	margin-bottom: 7%;
+	font-size: 50px;
+	font-weight: 400;
+}
+
+#img {
+	height: 50vh !important;
+}
+
+#col:hover:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 5.5% !important;
+	right: 0 !important;
+	border-radius: 3px !important;
+	bottom: 0;
+	background: linear-gradient(to left, #02aab0, #00cdac);
+	opacity: .9;
+	height: 50vh !important;
+	width: 89.5% !important;
+	overflow: hidden;
+}
+
+#col:hover img {
+	transform: scale(1.0) !important;
+	padding-right: 1px;
+}
+
+.text {
+	transition: all .6s ease-in-out;
+	background-color: aliceblue;
+	height: 8vh;
+	text-align: center;
+	width: 100% !important;
+	position: relative;
+	top: -10px !important;
+	z-index: 5;
+}
+
+
+#foodPrice {
+	background-color: aliceblue !important;
+}
+
+.shitss {
+	background-color: aliceblue !important;
+}
+
+#divRating {
+	margin-left: -10px;
+}
+
+/*FOOTER*/
+#BDFooter {
+	background: url(footer-back-transparent.png) !important;
+	height: 70vh !important;
+	padding-top: 5%;
+}
+
+
+/*FOOTER COLUMN 1*/
+#footerh4 {
+	font-size: 33px;
+	color: white;
+	font-family: cursive;
+	margin-bottom: 30px;
+	color: #02baa0;
+	border: none;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+#footerP p {
+	text-align: left;
+	transition: .5s;
+}
+
+#footerP p a {
+	color: white;
+	text-decoration: none;
+}
+
+#footerP p:hover {
+	margin-left: 10px;
+}
+
+#footerP p a:hover {
+	color: #02baa0;
+}
+
+#footerP #small {
+	margin-top: -15px;
+	color: #02baa0;
+}
+
+/*FOOTER COLUMN 2*/
+
+.list-inline {
+	text-align: center;
+}
+
+.list-inline li {
+	font-size: 18px;
+	margin-bottom: 5%;
+}
+
+.list-inline li a {
+	font-size: 20.5px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	transition: .5s;
+	font-weight: 500;
+}
+
+.list-inline li a:hover {
+	color: #02baa0;
+	margin-left: 10px;
+}
+
+/*FOOTER COLUMN 3*/
+#footerform {
+	text-align: center;
+	margin-left: 50px;
+}
+
+#footerFormGroup {
+	margin-bottom: 15%;
+	width: auto;
+}
+
+#footerFormGroup #name {
+	background-color: transparent !important;
+	color: #02baa0;
+}
+
+#footerbtn {
+	background: linear-gradient(to left, #02aab0, #00cdac);
+	color: aliceblue;
+	transition: .5s;
+	border-radius: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footerbtn:hover {
+	background: aliceblue;
+	color: #02baa0;
+	border-color: #02baa0;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19), 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (max-width: 600px) {
+	/*FOOTER ELEMENTS*/
+
+	/*	FOOTER*/
+	#BDFooter {
+
+		height: 160vh !important;
+		background-size: cover;
+		padding: 0;
+		margin-top: 0%;
+	}
+
+	#footerH1:before {
+		display: none;
+	}
+
+	#footerh4 {
+		margin-top: 8%;
+		margin-bottom: 3%;
+	}
+
+	#footerbtn {
+		margin-left: -10%;
+	}
+}

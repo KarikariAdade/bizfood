@@ -1,0 +1,533 @@
+	/*HOME BACKGROUND*/
+
+	.home {
+		width: 100% !important;
+		background-image: url(food-menu.jpg);
+		height: 80vh;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 2;
+		text-align: center;
+
+	}
+
+	.home:after {
+		height: 80vh;
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, .3);
+	}
+
+	/*HOME TEXT*/
+
+	#foodMenu {
+		position: relative;
+		top: 15%;
+		z-index: 3;
+		padding-top: 10%;
+		color: white;
+		font-size: 75px;
+		font-family: cursive;
+	}
+
+	#homeText {
+		position: relative;
+		top: 4%;
+		z-index: 3;
+		color: white;
+		padding-top: 4%;
+		opacity: .8;
+	}
+
+
+	/*NAVIGATION TABS POSITIONING*/
+
+	.nav-tabs {
+		text-align: center;
+		background-color: transparent;
+		margin-left: 7.5%;
+		margin-top: 5%;
+		margin-bottom: 3%;
+		border-bottom: none;
+	}
+
+	#nav-home-tab,
+	#nav-profile-tab,
+	#nav-contact-tab,
+	#nav-dessert-tab,
+	#nav-beverage-tab {
+		margin-right: 3%;
+		font-size: 18px;
+		font-weight: 500;
+		padding: .75rem 1rem;
+		transition: all .15s ease;
+		color: #02baa0;
+		font-family: cursive;
+		width: 15%;
+		background-color: #fff;
+		box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+			0 1px 3px rgba(0, 0, 0, .08);
+		transition: .5s;
+	}
+
+	#nav-home-tab:hover {
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	#nav-profile-tab:hover {
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	#nav-contact-tab:hover {
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	#nav-dessert-tab:hover {
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	#nav-beverage-tab:hover {
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	/*MENU LIST ITEMS*/
+
+	#foodPrice {
+		font-weight: bolder;
+		font-family: cursive;
+		margin-top: 5px;
+		color: #02baa0;
+
+	}
+
+	#foodPrice small {
+		text-decoration: line-through;
+		font-family: serif;
+		font-weight: bold;
+		opacity: .5;
+		color: black;
+	}
+
+	#divRating .fa-star {
+		color: #02baa0;
+	}
+
+	#rating {
+		color: silver !important;
+	}
+
+
+	#col:hover .text {
+		position: relative;
+		transition: all 0.6s ease-in-out !important;
+		transition-delay: .2s;
+		margin-top: -14%;
+		height: 13vh;
+		width: 100% !important;
+		color: black;
+		background-color: white;
+	}
+
+	.text {
+		transition: all .6s ease-in-out;
+		background-color: aliceblue !important;
+		height: 8vh;
+		text-align: center;
+		width: 100% !important;
+		position: relative;
+		z-index: 5;
+	}
+
+
+	#col:hover:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to left, #02aab0, #00cdac);
+		opacity: .9;
+		height: 45vh;
+		width: 89.3%;
+		overflow: hidden;
+	}
+
+	#col {
+		overflow: hidden !important;
+	}
+
+	#h3 {
+		position: relative;
+		transform: translateY(-40px);
+		text-align: center;
+		transition-delay: .3s !important;
+		transition: all .7s ease-in-out;
+		margin-bottom: -18%;
+		z-index: 6;
+		font-size: 20px;
+	}
+
+	#ss:hover #h3 {
+		transform: translateY(100px) !important;
+	}
+
+	#ss {
+		overflow: hidden !important;
+		transition: .6s;
+		width: 100%;
+	}
+
+	#img {
+		height: 45vh;
+		width: 100%;
+		overflow: hidden !important;
+		transition: .5s;
+	}
+
+	#ss:hover #img {
+		/*		transform: scale(1.05);*/
+		/*		width: 100%;*/
+	}
+
+	#col:hover {
+		overflow: hidden !important;
+	}
+
+	#col {
+		border-radius: 5px !important;
+		margin-bottom: 8%;
+		overflow: hidden !important;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+		width: 100%;
+	}
+
+	#span {
+		color: #fff;
+		position: absolute;
+		right: 30px;
+		top: 15px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.5;
+		transition: .5s;
+		text-transform: uppercase;
+		padding: 1px 10px;
+		border-radius: 2px;
+		background: #02baa0;
+		text-align: center;
+	}
+
+
+	/*JUMBOTRONSKEW*/
+
+	.jumbotronSkew {
+		margin-top: 4%;
+		height: 10vh;
+		background-color: aliceblue;
+		transform: skewY(1.5deg);
+		margin-bottom: -2%;
+
+	}
+
+	.jumbotron {
+		background: url(faq-thumb.png);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.bottomJumbotronSkew {
+		background-color: aliceblue;
+		height: 10vh;
+		margin-top: -4%;
+		transform: skewY(1.5deg);
+		margin-bottom: 5%;
+	}
+
+	#howText {
+		margin-bottom: 6%;
+		font-family: cursive;
+		color: #02baa0;
+		font-weight: bolder;
+	}
+
+	#howParagraphImage {
+		opacity: .6;
+	}
+
+	#howParagraphImage,
+	#howImageText {
+		text-align: center;
+	}
+
+	#howImageText span {
+		font-weight: bolder;
+		color: #02baa0;
+	}
+
+	#howImageText {
+		font-size: 20px;
+		font-weight: 500;
+
+	}
+
+	/*
+	#orderSection {
+		border: 4px solid red !important;
+		margin: 10%;
+	}*/
+
+	#orderSectionP span {
+		padding-right: 50px;
+	}
+
+	#orderSectionP {
+		font-size: 30px;
+		padding: 10px;
+		font-family: cursive;
+		font-weight: bold;
+		color: #02baa0;
+	}
+
+	#orderSectionP button {
+		background-color: #00cdac;
+		border-radius: 50px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: .5s;
+	}
+
+	#orderSectionP button a {
+		font-family: cursive;
+		color: white;
+		text-decoration: none;
+		font-size: 22px;
+	}
+
+	#orderSectionP button:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	/*FOOTER ELEMENTS*/
+
+
+	/*FOOTER*/
+	#BDFooter {
+		background: url(footer-back-transparent.png) !important;
+		height: 70vh !important;
+		padding-top: 5%;
+	}
+
+
+	/*FOOTER COLUMN 1*/
+	#footerh4 {
+		font-size: 33px;
+		color: white;
+		font-family: cursive;
+		margin-bottom: 30px;
+		color: #02baa0;
+		border: none;
+		text-align: center;
+		text-decoration: none !important;
+	}
+
+	#footerP p {
+		text-align: left;
+		transition: .5s;
+	}
+
+	#footerP p a {
+		color: white;
+		text-decoration: none;
+	}
+
+	#footerP p:hover {
+		margin-left: 10px;
+	}
+
+	#footerP p a:hover {
+		color: #02baa0;
+	}
+
+	#footerP #small {
+		margin-top: -15px;
+		color: #02baa0;
+	}
+
+	/*FOOTER COLUMN 2*/
+
+	.list-inline {
+		text-align: center;
+	}
+
+	.list-inline li {
+		font-size: 18px;
+		margin-bottom: 5%;
+	}
+
+	.list-inline li a {
+		font-size: 20.5px;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		transition: .5s;
+		font-weight: 500;
+	}
+
+	.list-inline li a:hover {
+		color: #02baa0;
+		margin-left: 10px;
+	}
+
+	/*FOOTER COLUMN 3*/
+	#footerform {
+		text-align: center;
+		margin-left: 50px;
+	}
+
+	#footerFormGroup {
+		margin-bottom: 15%;
+		width: auto;
+	}
+
+	#footerFormGroup #name {
+		background-color: transparent !important;
+		color: #02baa0;
+	}
+
+	#footerbtn {
+		background: linear-gradient(to left, #02aab0, #00cdac);
+		color: aliceblue;
+		transition: .5s;
+		border-radius: 50px;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	#footerbtn:hover {
+		background: aliceblue;
+		color: #02baa0;
+		border-color: #02baa0;
+		box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19), 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	/*MEDIA QUERIES*/
+
+	@media only screen and (max-width: 475px) {
+		#ss {
+			height: 51vh;
+		}
+	}
+
+	/*MY PHONE*/
+
+	@media only screen and (max-width: 600px) {
+		.home {
+			width: 100% !important;
+			background-image: url(food-menu.jpg);
+			height: 80vh;
+			background-attachment: fixed !important;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			z-index: 2;
+			text-align: center;
+
+		}
+
+		#foodMenu {
+			position: relative;
+			top: 15%;
+			padding-top: 5%;
+		}
+
+		#homeText {
+			position: relative;
+			top: 15%;
+			z-index: 3;
+			color: white;
+			padding-top: 4%;
+			opacity: .8;
+		}
+
+		.nav-tabs {
+			text-align: center;
+			background-color: transparent;
+			margin-left: 20%;
+			margin-top: 5%;
+			margin-bottom: 10%;
+			border-bottom: none;
+		}
+
+		#nav-home-tab,
+		#nav-profile-tab,
+		#nav-contact-tab,
+		#nav-dessert-tab,
+		#nav-beverage-tab {
+			margin-top: 10px;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 10px;
+			transition: all .15s ease;
+			color: #02baa0;
+			font-family: cursive;
+			width: 39%;
+			background-color: #fff;
+			box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+				0 1px 3px rgba(0, 0, 0, .08);
+			transition: .5s;
+		}
+
+		#ss {
+			height: 49.5vh;
+		}
+
+		.text {
+			padding: 1%;
+		}
+
+		#col:hover:after {
+			width: 91.4% !important;
+		}
+
+		/*FOOTER ELEMENTS*/
+
+		/*	FOOTER*/
+		#BDFooter {
+
+			height: 160vh !important;
+			background-size: cover;
+			padding: 0;
+			margin-top: 0%;
+		}
+
+		#footerH1:before {
+			display: none;
+		}
+
+		#footerh4 {
+			margin-top: 8%;
+			margin-bottom: 3%;
+		}
+
+		#footerbtn {
+			margin-left: -10%;
+		}
+
+	}
+
+	@media only screen and (min-width: 600px) {}
+
+	@media only screen and(min-width: 992) {}
+
+	@media only screen and (max-width: 320px) {
+		#ss {
+			height: 51vh;
+		}
+	}

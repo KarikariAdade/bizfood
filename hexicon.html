@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>
+		Hexicon
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: #003148;
+	}
+
+	ul {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+	}
+
+	ul li {
+		list-style: none;
+		position: relative;
+		margin: 0 10px;
+	}
+
+	ul li a {
+		width: 70px;
+		height: 40px;
+		background: #fff;
+		display: block;
+		text-align: center;
+		line-height: 40px;
+		font-size: 36px;
+		transition: .5s;
+		color: #fff;
+	}
+
+	ul li a:hover {
+		transform: translateY(-20px);
+	}
+
+	ul li a:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: -1;
+		transform: rotate(60deg);
+	}
+
+	ul li a:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: -1;
+		transform: rotate(-60deg);
+	}
+
+	ul li:nth-child(1) a,
+	ul li:nth-child(1) a:before,
+	ul li:nth-child(1) a:after {
+		background: #3b5998;
+	}
+
+	ul li:nth-child(2) a,
+	ul li:nth-child(2) a:before,
+	ul li:nth-child(2) a:after {
+		background: #00aaed;
+	}
+
+	ul li:nth-child(3) a,
+	ul li:nth-child(3) a:before,
+	ul li:nth-child(3) a:after {
+		background: #dd4b39;
+	}
+
+	ul li:nth-child(4) a,
+	ul li:nth-child(4) a:before,
+	ul li:nth-child(4) a:after {
+		background: #007bb6;
+	}
+
+	ul li:nth-child(5) a,
+	ul li:nth-child(5) a:before,
+	ul li:nth-child(5) a:after {
+		background: #bc2a8d;
+	}
+
+</style>
+
+<body>
+	<input class="form-control" id="2" type="radio"> 2
+	<style>
+		input[type=radio] {
+			padding: 40%;
+			font-size: 40%;
+			background-color: red;
+			color: red;
+		}
+
+	</style>
+	<ul>
+		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+		<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+		<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+	<script src="js/all.js"></script>
+</body>
+
+</html>

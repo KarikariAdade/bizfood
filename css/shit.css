@@ -1,0 +1,58 @@
+.box {
+	position: relative;
+	top: -35%;
+	width: 100%;
+	height: 40vh;
+	margin-bottom: 40px;
+	border: solid 10px rgba(0, 0, 0, .7);
+	border-radius: 50%;
+	overflow: hidden !important;
+	position: relative;
+}
+
+.imgBox {
+	transition-timing-function: ease-in-out;
+	transition: transform 1.5s;
+	overflow: hidden;
+}
+
+.imgBox:hover {
+	transform: scale(1.3);
+	overflow: hidden;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
+	overflow: hidden !important;
+}
+
+.details {
+	position: absolute;
+	top: 2%;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background-color: rgba(0, 0, 0, .7);
+	padding-top: 20%;
+	margin: -10px;
+	color: white;
+	transform: scaleX(0);
+	transition: transform 1s;
+	border-radius: 50%;
+	height: 37vh;
+	overflow: hidden !important;
+	width: 100%;
+}
+
+.box:hover .details {
+	transition: transform 1s;
+	transform: scaleX(1);
+	height: 40vh;
+	overflow: hidden !important;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#imgBoxImage {
+	border-radius: 50%;
+	height: 40vh;
+	transform: scale(1.06);
+}
